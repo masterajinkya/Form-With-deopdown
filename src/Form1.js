@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function Form() {
+function Form1() {
 
 
 
@@ -160,5 +160,5 @@ function Form() {
     )
 }
 
-export default Form
+export default Form1
 
