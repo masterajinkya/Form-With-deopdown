@@ -46,7 +46,7 @@ function Form() {
 
     return (
         <>
-            <div className='container border border-black p-2'>
+            <div className='container border border-black p-2 mt-4'>
                 <form onSubmit={handleSubmit}>
                     <div className='row'>
 
