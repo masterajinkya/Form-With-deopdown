@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
 function Form1() {
-
-
-
     const [form, setForm] = useState({
         fname: '',
         lname: '',
@@ -12,7 +9,6 @@ function Form1() {
 
     const [data, setData] = useState([]);
     const [isPhone, setIsPhone] = useState(1);
-    // const [isEmail, setIsEmail] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -138,23 +134,23 @@ function Form1() {
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
             </div>
-            // <div className='container border border-primary mt-4 p-3'>
-            //     {/* {data.map((user, i) => {
-            //         return <div key={i}>
-            //             <h1>{user.fname}</h1>
-            //             <h1>{user.lname}</h1>
-            //             <h1>{user.contact}</h1>
-            //         </div>
-            //     })} */}
-            //     {data.map((user, i) => {
-            //         return <div className='row mt-2 py-2 border  shadow' key={i}>
-            //             <div className='col-3 border-right border-black'>{user.fname}</div>
-            //             <div className='col-3 border-right border-black'>{user.lname}</div>
-            //             <div className='col-6 '>{user.contact}</div>
-            //         </div>
-            //     })}
+            <div className='container border border-primary mt-4 p-3'>
+                {/* {data.map((user, i) => {
+                    return <div key={i}>
+                        <h1>{user.fname}</h1>
+                        <h1>{user.lname}</h1>
+                        <h1>{user.contact}</h1>
+                    </div>
+                })} */}
+                {data.map((user, i) => {
+                    return <div className='row mt-2 py-2 border  shadow' key={i}>
+                        <div className='col-3 border-right border-black'>{user.fname}</div>
+                        <div className='col-3 border-right border-black'>{user.lname}</div>
+                        <div className='col-6 '>{user.contact}</div>
+                    </div>
+                })}
 
-            // </div>
+            </div>
 
         </>
     )
