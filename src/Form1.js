@@ -8,7 +8,7 @@ function Form1() {
     });
 
     const [data, setData] = useState([]);
-    const [isPhone, setIsPhone] = useState(1);
+    const [isPhone, setIsPhone] = useState(0);
 
     const handleSubmit = (e) => {
         e.preventDefault()
