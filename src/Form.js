@@ -22,6 +22,13 @@ function Form() {
     const handleSubmit = (e) => {
         e.preventDefault()
         setData([...data, form])
+        setForm({
+        fname: '',
+        lname: '',
+        contact: '',
+        Select:'',
+        // email:""
+    });
     }
 
 
