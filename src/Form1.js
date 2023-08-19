@@ -13,6 +13,11 @@ function Form1() {
     const handleSubmit = (e) => {
         e.preventDefault()
         setData([...data, form])
+        setForm({
+        fname: '',
+        lname: '',
+        contact: ''
+    });
     }
 
 
